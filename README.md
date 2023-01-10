@@ -2,7 +2,7 @@
 
 This is the github repoistory for an accurate and low-cos traffic estimation approach implemented in pytorch.
 
-Paper: 
+Paper: AutoTomo: Accurate and Low-cost Traffic Estimator Integrating Network Tomography
 
 ## Abstract
 
