@@ -30,8 +30,8 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 - AutoTomo
 - MNETME
 - DBN
-- VAE https://github.com/MikeKalnt/VAE-TME
-- FGSR https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-matrix-recovery
+- VAE      details in https://github.com/MikeKalnt/VAE-TME
+- FGSR     details in https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-matrix-recovery
 
 ## File structure:
 
@@ -40,8 +40,8 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 - plot.py - helper functions for generating figures 
 - utils.py - code for earlystopping, training and testing
 - net_params.py - network architectures of AutoTomo, MNETME and DBN
-- AbileneData/ - CSV files of remote martrix and traffic matrix sampled from Abilene dataset
-- GeantData/ - CSV files of remote martrix and traffic matrix sampled from G´EANT dataset
+- AbileneData/ - CSV file of remote martrix and traffic matrix sampled from Abilene dataset
+- GeantData/ - CSV file of remote martrix and traffic matrix sampled from G´EANT dataset
 
 ## Example args:
 
@@ -88,3 +88,5 @@ python main.py --model autotomo --unknown_r 0.1 --dataset geant --loss_func l1no
 ```
 
 ## Licence
+
+Distributed under the MIT License. See [LICENCE](https://github.com/Y-debug-sys/AutoTomo/blob/main/LICENSE) for more information.
