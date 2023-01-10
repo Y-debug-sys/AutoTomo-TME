@@ -55,7 +55,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 "epoch": 1000,
 "batch_size": 32,
 "lr": 1e-2 if args.model=="mnetme" else 1e-3,
-"dataset": ["abilene", "geant"],
+"dataset": ["abilene", "geant"]
 }
 
 ## How to use
