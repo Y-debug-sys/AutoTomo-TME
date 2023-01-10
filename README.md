@@ -31,9 +31,9 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 - AutoTomo
 - MNETME
 - DBN
-- VAE 
+- VAE<br/>
 https://github.com/MikeKalnt/VAE-TME
-- FGSR 
+- FGSR<br/>
 https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-matrix-recovery
 
 ## File structure:
