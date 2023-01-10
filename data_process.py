@@ -6,7 +6,13 @@ from torch.utils.data import DataLoader
 
 
 def add_unknown(feature_size, known_train_rate):
+    """
+    Select unknown id (return known id) of OD pairs.
 
+    :param feature_size: nodes_num * nodes_num
+    :param known_train_rate: known rate of OD pairs for training
+    :return: known id of OD pairs for training
+    """
     known_train_num = int(np.ceil(feature_size * known_train_rate))
     id_rdm = torch.randperm(feature_size)
     known_train_id = id_rdm[0:known_train_num]
@@ -16,7 +22,13 @@ def add_unknown(feature_size, known_train_rate):
 
 
 def train_data(data, known_train_id):
+    """
+    According to known id, replace unknown OD pairs with mean value of known OD pairs.
 
+    :param data: origin TM data tensor
+    :param known_train_id: known id of OD pairs for training
+    :return: practical TM data tensor for training
+    """
     feature_size = data.shape[1]
     known_data_mean = torch.mean(data[:, known_train_id], dim=1).view(-1, 1)
     data_train_tensor = known_data_mean.repeat(1, feature_size)
@@ -26,6 +38,15 @@ def train_data(data, known_train_id):
 
 
 def load_my_data(known_train_rate, b_size, device, dataset_name):
+    """
+    Process CSV flies, then add unknown OD piars and build data(label) dataloader for training(testing).
+
+    :param known_train_rate: known id of OD pairs for training
+    :param b_size: batch size of dataloader
+    :param device: cuda:0 or cpu
+    :param dataset_name: name of dataset (geant or abilene)
+    :return: a handful of dataloaders, route martrix and known id of OD pairs for training
+    """
     
     if dataset_name == "geant":
         base = "GeantData"

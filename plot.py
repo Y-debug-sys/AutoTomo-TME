@@ -3,7 +3,13 @@ import numpy as np
 
 
 def sp_mse(true_test_flow, pred_test_flow):
+    """
+    Compute mean square error of every OD pair.
 
+    :param true_test_flow: real OD flows
+    :param pred_test_flow: predicted OD flows
+    :return: MSE of every OD pair
+    """
     tn, fn = true_test_flow.shape 
     se = np.square(true_test_flow-pred_test_flow)
     mse = np.mean(se, axis=0)
@@ -11,7 +17,14 @@ def sp_mse(true_test_flow, pred_test_flow):
 
 
 def tm_mse(true_test_flow, pred_test_flow, pat=12):
+    """
+    Compute mean square error of every time batch.
 
+    :param true_test_flow: real OD flows
+    :param pred_test_flow: predicted OD flows
+    :param pat: time batch size
+    :return: MSE of every time batch
+    """
     tn, fn = true_test_flow.shape
     true_flows_sum = np.zeros((tn//pat, fn))
     predict_flows_sum = np.zeros((tn//pat, fn))
@@ -26,7 +39,13 @@ def tm_mse(true_test_flow, pred_test_flow, pat=12):
 
 
 def sp_l1(true_test_flow, pred_test_flow):
+    """
+    Compute mean absolute error of every OD pair..
 
+    :param true_test_flow: real OD flows
+    :param pred_test_flow: predicted OD flows
+    :return: MAE of every OD pair.
+    """
     tn, fn = true_test_flow.shape 
     ae = np.abs(true_test_flow-pred_test_flow)
     nmae = np.mean(ae, axis=0)
@@ -34,7 +53,14 @@ def sp_l1(true_test_flow, pred_test_flow):
 
 
 def tm_l1(true_test_flow, pred_test_flow, pat=12):
-    
+    """
+    Compute mean absolute error of every time batch.
+
+    :param true_test_flow: real OD flows
+    :param pred_test_flow: predicted OD flows
+    :param pat: time batch size
+    :return: MAE of every time batch
+    """
     tn, fn = true_test_flow.shape
     true_flows_sum = np.zeros((tn//pat, fn))
     predict_flows_sum = np.zeros((tn//pat, fn))
@@ -49,7 +75,13 @@ def tm_l1(true_test_flow, pred_test_flow, pat=12):
 
 
 def plot_sp(real_flow, pred_flow, label, loss, pict_name):
-
+    """
+    :param real_flow: real OD flows
+    :param pred_flow: predicted OD flows
+    :param label: curve name
+    :param loss: y value (mse or mae)
+    :param pict_name: save path
+    """
     fig, ax = plt.subplots()
 
     if loss == "mse":
@@ -69,7 +101,13 @@ def plot_sp(real_flow, pred_flow, label, loss, pict_name):
 
 
 def plot_tm(real_flow, pred_flow, label, loss, pict_name):
-
+    """
+    :param real_flow: real OD flows
+    :param pred_flow: predicted OD flows
+    :param label: curve name
+    :param loss: y value (mse or mae)
+    :param pict_name: save path
+    """
     fig, ax = plt.subplots()
 
     if loss == "mse":
