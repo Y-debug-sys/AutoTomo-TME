@@ -32,9 +32,9 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 - MNETME
 - DBN
 - VAE<br/>
-https://github.com/MikeKalnt/VAE-TME
+details in https://github.com/MikeKalnt/VAE-TME
 - FGSR<br/>
-https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-matrix-recovery
+details in https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-matrix-recovery
 
 ## File structure:
 
