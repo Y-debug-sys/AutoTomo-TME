@@ -56,7 +56,7 @@ details in https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-ma
 "patience": 50,
 "epoch": 1000,
 "batch_size": 32,
-"lr": 1e-2 if args.model=="mnetme" else 1e-3,
+"lr": 0.01 if args.model=="mnetme" else 0.001,
 "dataset": ["abilene", "geant"]
 }
 
