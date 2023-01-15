@@ -67,7 +67,7 @@ python main.py --model autotomo --unknown_r 0.1
 
 Example usage:
 ```bash
-python main.py --model autotomo --unknown_r 0.1 --dataset geant --loss_func l1norm --mode unobserved --epoch -1500
+python main.py --model autotomo --unknown_r 0.1 --dataset geant --loss_func l1norm --mode unobserved --epoch 1500
 ```
 
 ## Licence
