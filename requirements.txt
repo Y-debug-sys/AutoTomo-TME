@@ -1,0 +1,4 @@
+Numpy==1.21.6
+Pandas==1.3.5
+Matplotlib==3.6.0
+Pytorch==1.12.0
