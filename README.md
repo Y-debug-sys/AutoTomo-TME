@@ -32,7 +32,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 ## Methods
 
 - AutoTomo
-- MNETME
+- BPNN
 - DBN
 - VAE &nbsp;&nbsp; details in https://github.com/MikeKalnt/VAE-TME
 - FGSR &nbsp; details in https://github.com/udellgroup/Codes-of-FGSR-for-effecient-low-rank-matrix-recovery
