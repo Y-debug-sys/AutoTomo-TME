@@ -43,7 +43,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 - main.py - main function with args settings
 - plot_utils.py - helper functions for generating figures 
 - train_utils.py - code for earlystopping, training and testing
-- net_params.py - network architectures of AutoTomo, MNETME and DBN
+- net_params.py - network architectures of AutoTomo, AutoTomo-os, BPNN and DBN
 - Data/Abilene/ - CSV files of remote martrix and traffic matrix sampled from Abilene dataset
 - Data/Geant - CSV files of remote martrix and traffic matrix sampled from G´EANT dataset
 
