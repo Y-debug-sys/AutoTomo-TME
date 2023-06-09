@@ -39,13 +39,13 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 
 ## File structure:
 
-- data_process.py - preprocess CSV file and custom dataset loader for experimentation
+- data_utils.py - preprocess CSV file and custom dataset loader for experimentation
 - main.py - main function with args settings
-- plot.py - helper functions for generating figures 
-- utils.py - code for earlystopping, training and testing
+- plot_utils.py - helper functions for generating figures 
+- train_utils.py - code for earlystopping, training and testing
 - net_params.py - network architectures of AutoTomo, MNETME and DBN
-- AbileneData/ - CSV files of remote martrix and traffic matrix sampled from Abilene dataset
-- GeantData/ - CSV files of remote martrix and traffic matrix sampled from G´EANT dataset
+- Data/Abilene/ - CSV files of remote martrix and traffic matrix sampled from Abilene dataset
+- Data/Geant - CSV files of remote martrix and traffic matrix sampled from G´EANT dataset
 
 ## Args:
 
