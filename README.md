@@ -45,7 +45,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 - train_utils.py - code for earlystopping, training and testing
 - net_params.py - network architectures of AutoTomo, AutoTomo-os, BPNN and DBN
 - Data/Abilene/ - CSV files of remote martrix and traffic matrix sampled from Abilene dataset
-- Data/Geant - CSV files of remote martrix and traffic matrix sampled from G´EANT dataset
+- Data/Geant/ - CSV files of remote martrix and traffic matrix sampled from G´EANT dataset
 
 ## Args:
 
