@@ -57,7 +57,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 "patience": 50,
 "epoch": 500,
 "batch_size": 32,
-"lr": 0.01 if args.model=="mnetme" else 0.001,
+"lr": 0.001,
 "dataset": ["abilene", "geant"]
 }
 
