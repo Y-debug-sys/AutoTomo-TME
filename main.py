@@ -16,9 +16,9 @@ def parse_args():
                         help='Root directory')
     parser.add_argument('--batch_size', type=int, default=32,
                         help="Batch size")
-    parser.add_argument('--patience', type=int, default=30,
+    parser.add_argument('--patience', type=int, default=50,
                         help="Patience")
-    parser.add_argument('--epoch', type=int, default=1000,
+    parser.add_argument('--epoch', type=int, default=500,
                         help="Epoch")
     parser.add_argument('--loss_func', type=str, default="l1norm", 
                         choices=["l1norm", "mse"],
