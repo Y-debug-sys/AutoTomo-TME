@@ -50,7 +50,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 ## Args:
 
 {
-"model": ["autotomo", "bpnn", "dbn"],
+"model": ["autotomo", "autotomo-os", "bpnn", "dbn"],
 "unknown_r": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7],
 "mode": ["all", "unobserved"],
 "loss_func": ["mse", "l1norm"],
