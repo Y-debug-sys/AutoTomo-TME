@@ -55,7 +55,7 @@ This project has been developed and tested in Python 3.7.13 and requires the fol
 "mode": ["all", "unobserved"],
 "loss_func": ["mse", "l1norm"],
 "patience": 50,
-"epoch": 1000,
+"epoch": 500,
 "batch_size": 32,
 "lr": 0.01 if args.model=="mnetme" else 0.001,
 "dataset": ["abilene", "geant"]
