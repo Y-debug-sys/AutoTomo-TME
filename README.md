@@ -1,4 +1,4 @@
-# Official Implementation: "AutoTomo: Learning-Based Traffic Estimator Incorporating Network Tomographyy"
+# Official Implementation: "AutoTomo: Learning-Based Traffic Estimator Incorporating Network Tomography"
 
 This is the github repoistory for an accurate and low-cost traffic estimation approach implemented in pytorch.
 
