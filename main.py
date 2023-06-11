@@ -35,18 +35,16 @@ def parse_args():
     parser.add_argument('--unknown_r', type=float, default=0.,
                         choices=[i*0.1 for i in range(8)],
                         help="Unknown rate")
+    parser.add_argument('--lr', type=float, default=1e-3,
+                                   help="Learning rate")
 
     parser_args, _ = parser.parse_known_args()
     target_parser = argparse.ArgumentParser(parents=[parser])
     
     if parser_args.model == 'bpnn':
-        target_parser.add_argument('--lr', type=float, default=1e-2,
-                                   help="Learning rate")
         target_parser.add_argument('--hd', type=int, default=12,
                                    help="Hidden dimensions")
     elif parser_args.model in ['dbn', 'autotomo', 'autotomo_os']:
-        target_parser.add_argument('--lr', type=float, default=1e-3,
-                                   help="Learning rate")
         target_parser.add_argument('--hd_1', type=int, default=80,
                                    help="Hidden dimensions 1st")
         target_parser.add_argument('--hd_2', type=int, default=100,
