@@ -52,6 +52,7 @@ def add_unknown(feature_size, known_train_rate):
     id_rdm = torch.randperm(feature_size)
     known_train_id = id_rdm[0:known_train_num]
     id_rdm = torch.randperm(known_train_num)
+    known_train_id = known_train_id[id_rdm]
     return known_train_id
 
 
