@@ -37,7 +37,7 @@ class Trainer_autotomo(object):
         os.makedirs(self.results_folder, exist_ok=True)
 
         self.counter = 50
-        self.early_stopping = EarlyStopping(patience=int(patience*self.milestone_cycle/self.counter), path=os.path.join(results_folder, 'AutoTomo_best.pt'),verbose=False)
+        self.early_stopping = EarlyStopping(patience=int(patience), path=os.path.join(results_folder, 'AutoTomo_best.pt'),verbose=False)
         self.step = 0
 
     def loss_func(self, output, target, input):
